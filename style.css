@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #F8F8F8;
+    overflow-x: hidden;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header img{
+    max-width: 96px;
+    max-height: 21px;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header li{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+@keyframes i{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+}
+
+
+header li:hover i{
+    animation-name: i;
+    animation-duration: .3s;
+    transform: rotate(180deg);
+}
+
+@keyframes dropdown{
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+}
+
+header li:hover .dropdown{
+    z-index: 100;
+    visibility: visible;
+    animation-name: dropdown;
+    animation-duration: 3s;
+}
+
+
+
+.menu {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 18px;
+}
+
+
+.buttons button{
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    background-color: #1290A4;
+    border: none;
+}
+
+.buttons a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+.dropdown{
+    display: flex;
+    width: 120px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    border-width: 0px;
+    border-style: solid;
+    border-color: blue;
+    border-top-width: 3px;
+    flex-direction: column;
+    background-color: white;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.dropdown a{
+    z-index: 100;
+    font-size: 14px;
+}
+
+
+section.getStarted {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    width: 100%;
+    margin-top: -55px;
+    padding-bottom: 130px;
+
+}
+section.getStarted h1{
+    font-size: 60px;
+    z-index: 2;
+}
+section.getStarted p{
+    font-size: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section.getStarted input[type="email"]{
+    border: none;
+    background-color: rgb(203, 225, 255);
+    height: 50px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+section.getStarted input[type="submit"]{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    background-color: #1290A4;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+section.getStarted form p{
+    font-size: 16px;
+    color: rgba(168, 168, 168, 0.932);
+}
+
+section.getStarted form a{
+    text-decoration: none;
+}
+
+
+section.features{
+    background-color: #EEF4F5;
+    width: 100%;
+    height: 700px;
+
+    align-content: center;
+}
+
+section.features h1{
+    font-size: 48px;
+    padding-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    margin-right: 20px;
+    border-color: rgba(128, 128, 128, 0.315);
+    border-width: 3px;
+    border-style: solid;
+    width: 350px;
+    background-color: white;
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 10px 2px 2px 2px;
+}
+
+.box h4{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+.box p{
+    padding-left: 70px;
+    margin-left: -30px;
+    font-size: 17px;
+    color: gray;
+}
+
+.box a{
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.box img{
+    padding-top: 20px;
+    padding-left: 140px;
+}
+
+section.learnmore{
+    height: 650px;
+    background-color: #FFFFFF ;
+}
+
+section.learnmore h2{
+    padding-top: 70px;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+section.learnmore p{
+    font-size: 21px;
+    padding-bottom: 30px;
+}
+section.learnmore a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1290A4;
+}
+
+.info {
+    padding-left: 70px;
+}
+
+section.vantagens{
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 300px;
+}
+
+section.vantagens h2{
+    font-size: 48px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+section.vantagens p{
+    font-size: 21px;
+    padding-bottom: 30px;
+}
+
+section.vantagens ul{
+    list-style: none;
+}
+
+section.vantagens i{
+    color: #258AFF;
+}
+
+section.vantagens li{
+    font-size: 24px;
+}
+
+.demo {
+    background-color: #FEFDFD ;
+    margin-top: -5px;
+}
+
+.demo h2{
+    font-size: 48px;
+    padding-bottom: 30px;
+}
+
+.demo #a{
+    font-size: 21px;
+}
+
+.demo #b{
+    padding-top: 30px;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.demo button{
+    background-color: #F46F7C ;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+section.finalera{
+    margin-top: -10px;
+    background-color: #30393B ;
+    height: 800px;
+}
+
+
+
+.topo {
+    text-align: center;
+}
+
+.topo h2{
+    padding-top: 20px;
+    color: white;
+    font-size: 48px;
+    padding-bottom: 30px;
+}
+
+.topo p{
+    color: gray;
+    font-size: 21px;
+}
+
+.preco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.preco-box{
+    margin-top: 5px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 350px;
+    height: 530px;
+}
+
+.preco-box p{
+    color: gray;
+    margin-top: -30px;
+}
+
+.preco-box h2{
+    font-size: 48px;
+}
+
+.pagar{
+    margin-top: -20px;
+    display: flex;
+}
+
+.preco-box ul{
+    margin-top: 30px;
+    list-style: none;
+    height: 100px;
+}
+
+.preco-box li{
+    font-size: 17px;
+    padding: 10px;
+}
+
+.preco-box button{
+    border-radius: 10px;
+    margin-top: 70px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: #1290A4;
+    color: white;
+    font-weight: bold;
+}
+section.cadastro input[type="email"]{
+    border: none;
+    background-color: rgb(203, 225, 255);
+    height: 50px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+section.cadastro input[type="submit"]{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    background-color: #1290A4;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+section.cadastro form{
+    padding-top: 30px;
+}
+
+section.cadastro{
+    height: 500px;
+    text-align: center;
+}
+
+.final {
+
+    height: 250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-wrap: wrap;
+    margin-left: 200px;
+
+
+}
+
+.final img{
+    padding-right: 80%;
+
+}
+
+.final-informações{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.localização{
+    width: 30%;
+    padding: 30px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.849);
+
+}
+.contato{
+    padding: 30px;
+
+
+    height: 100%;
+}
+
+.contato p{
+    padding: 5px;
+}
+
+.final-menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+}
+
+.final-menu a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.final-menu2{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+}
+
+.final-menu2 a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.final-icons{
+    padding: 30px;
+    display: flex;
+}
+.final p{
+    color: gray;
+    padding: 10px;
+}
+
+.final a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+section.footer{
+    border-width: 0px;
+    border-style: dotted;
+    border-color: gray;
+    border-top-width: 3px;
+}
+#shape{
+    width: 100%;
+
+}
+
+@media screen and (max-width: 962px) {
+    .final{
+        margin-left: 0px;
+    }
+    .learnmore{
+        margin-top: 100px;
+    }
+    section.getStarted h1{
+        text-align: center;
+    }
+    section.features h1{
+        text-align: center;
+    }
+    section.vantagens{
+        margin-top: 200px;
+    }
+    section.demo{
+        margin-top: 200px;
+    }
+    section.cadastro{
+
+    }
+    section.finalera{
+        height: 1500px;
+    }
+}
+@media screen and (max-width: 740px) {
+    section.getStarted h1{
+        text-align: center;
+    }
+    .learnmore{
+        margin-top: 500px;
+    }
+    section.features h1{
+        text-align: center;
+    }
+    section.vantagens{
+        margin-top: 250px;
+        height: 500px;
+    }
+    section.demo{
+        margin-top: 250px;
+    }
+    section.cadastro{
+
+    }
+    section.finalera{
+        height: 2000px;
+    }
+}
+@media screen and (max-width: 496px) {
+    .learnmore{
+        margin-top: 500px;
+    }
+    section.demo{
+        margin-top: 350px;
+    }
+}
